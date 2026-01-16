@@ -30,3 +30,27 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=RMX3360 \
     SystemDevice=RE54ABL1 \
     SystemName=RMX3360
+
+# AXION
+TARGET_DISABLE_EPPE := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+TORCH_STR_SUPPORTED := true
+AXION_CAMERA_REAR_INFO := 64,8,2
+AXION_CAMERA_FRONT_INFO := 32
+AXION_MAINTAINER := theleafir1
+AXION_PROCESSOR := Qualcomm_Snapdragon_778G
+BYPASS_CHARGE_SUPPORTED := true
+BYPASS_CHARGE_TOGGLE_PATH := /sys/devices/virtual/oplus_chg/battery/mmi_charging_enable
+TARGET_IS_LOW_RAM ?= false
+PERF_GOV_SUPPORTED := true
+PERF_DEFAULT_GOV := schedutil
+PERF_ANIM_OVERRIDE := true
+GPU_FREQS_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/available_frequencies
+GPU_MIN_FREQ_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+GPU_MAX_FREQ_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/max_freq
+persist.sys.perf.scroll_opt = false
+HBM_SUPPORTED := true
+# Sepolicy
+BOARD_SEPOLICY_DIRS += \
+    device/realme/lunaa/sepolicy/vendor
+
