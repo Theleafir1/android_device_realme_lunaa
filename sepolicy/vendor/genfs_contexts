@@ -1,18 +1,5 @@
-# Все devfreq для kgsl-ddr-qos
-genfscon sysfs /sys/devices/platform/soc/soc:qcom,kgsl-ddr-qos/devfreq/soc:qcom,kgsl-ddr-qos/available_frequencies u:object_r:sysfs_gpu:s0
-genfscon sysfs /sys/devices/platform/soc/soc:qcom,kgsl-ddr-qos/devfreq/soc:qcom,kgsl-ddr-qos/min_freq           u:object_r:sysfs_gpu:s0
-genfscon sysfs /sys/devices/platform/soc/soc:qcom,kgsl-ddr-qos/devfreq/soc:qcom,kgsl-ddr-qos/cur_freq           u:object_r:sysfs_gpu:s0
-genfscon sysfs /sys/devices/platform/soc/soc:qcom,kgsl-ddr-qos/devfreq/soc:qcom,kgsl-ddr-qos/max_freq           u:object_r:sysfs_gpu:s0
-genfscon sysfs /sys/devices/platform/soc/soc:qcom,kgsl-ddr-qos/devfreq/soc:qcom,kgsl-ddr-qos/target_freq        u:object_r:sysfs_gpu:s0
-# Все devfreq для kgsl-3d0
 genfscon sysfs /sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/devfreq/3d00000.qcom,kgsl-3d0/available_frequencies u:object_r:sysfs_gpu:s0
 genfscon sysfs /sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/devfreq/3d00000.qcom,kgsl-3d0/min_freq           u:object_r:sysfs_gpu:s0
 genfscon sysfs /sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/devfreq/3d00000.qcom,kgsl-3d0/cur_freq           u:object_r:sysfs_gpu:s0
 genfscon sysfs /sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/devfreq/3d00000.qcom,kgsl-3d0/max_freq           u:object_r:sysfs_gpu:s0
 genfscon sysfs /sys/devices/platform/soc/3d00000.qcom,kgsl-3d0/devfreq/3d00000.qcom,kgsl-3d0/target_freq        u:object_r:sysfs_gpu:s0
-# GPU freq_table (legacy node)
-genfscon sysfs /sys/kernel/gpu/gpu_freq_table u:object_r:sysfs_gpu:s0
-genfscon proc /sys/vm/dirty_writeback_centisecs u:object_r:proc_dirty:s0
-genfscon proc /sys/vm/vfs_cache_pressure        u:object_r:proc_drop_caches:s0
-genfscon proc /sys/vm/dirty_ratio               u:object_r:proc_dirty:s0
-genfscon proc /sys/kernel/sched_migration_cost_ns u:object_r:proc_sched:s0
