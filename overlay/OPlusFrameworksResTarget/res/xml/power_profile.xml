@@ -96,7 +96,7 @@
   <array name="cpu.clusters.cores">
       <value>4</value> <!-- cluster 0 has cpu0, cpu1, cpu2, cpu3 -->
       <value>3</value> <!-- cluster 1 has cpu4, cpu5, cpu6 -->
-      <value>1</value> <!-- cluster 1 has cpu7 -->
+      <value>1</value> <!-- cluster 2 has cpu7 -->
   </array>
 
     <!-- Different CPU speeds for cluster 0 as reported in
@@ -218,7 +218,7 @@
   <!-- Current at each CPU speed for cluster 2, as per 'cpu.speeds.cluster2'.
        Like cpu.speeds.cluster2, there must be one of these present for
        each heterogeneous CPU cluster. -->
-  <array name="cpu.core_power.cluster1">
+  <array name="cpu.core_power.cluster2">
       <value>51</value>  <!-- ~60mA -->
       <value>58</value>  <!-- ~60mA -->
       <value>67</value>  <!-- ~80mA -->
