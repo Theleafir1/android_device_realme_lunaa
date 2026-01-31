@@ -35,7 +35,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TORCH_STR_SUPPORTED := true
-TARGET_ENABLE_BLUR := true
+# TARGET_ENABLE_BLUR := true
 AXION_CAMERA_REAR_INFO := 64,8,2
 AXION_CAMERA_FRONT_INFO := 32
 AXION_MAINTAINER := theleafir1
