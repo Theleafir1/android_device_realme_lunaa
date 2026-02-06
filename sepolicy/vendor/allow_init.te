@@ -1,3 +1,0 @@
-type proc_vm_dirty, fs_type;
-type proc_dirty_ratio, fs_type;
-allow init proc_vm_dirty:file rw_file_perms;
